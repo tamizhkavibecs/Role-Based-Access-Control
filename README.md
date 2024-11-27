@@ -45,8 +45,7 @@ o Teacher: Manage students only.
 
 ## 1. Clone the Repository
 
-git clone https://github.com/rbac-ui/role-based-access-control.git
-cd role-based-access-control
+gh repo clone tamizhkavibecs/Role-Based-Access-Control
 
 ## 2. Install Dependencies Install required npm packages for the React application:
 
