@@ -59,32 +59,7 @@ Start the JSON Server for mock API:
 
 ### json-server --watch db.json --port 3000
 
-Ensure db.json is present in the project root with the following structure:
-json
-{
-"users": [
-{
-"id": 1,
-"username": "admin",
-"password": "admin123",
-"role": "admin"
-},
-{
-"id": 2,
-"username": "teacher",
-"password": "teacher123",
-"role": "teacher"
-},
-{
-"id": 3,
-"username": "student",
-"password": "student123",
-"role": "student"
-}
-],
-"teachers": [],
-"students": []
-}
+Ensure db.json is present in the project root
 
 ## 4. Start the React Application Run the React development server:
 
@@ -104,23 +79,6 @@ npm start
    o Perform allowed actions (CRUD operations) based on your role.
 
 ---
-
-Project Structure
-Copy code
-src/
-├── components/
-│ ├── Login.js # Handles user login
-│ ├── Admin.js # Admin dashboard
-│ ├── Teacher.js # Teacher dashboard
-│ ├── Student.js # Student dashboard
-│ └── RoleProtectedRoute.js # Protects routes based on user role
-├── services/
-├── App.js # Main app component
-├── index.js # ReactDOM entry point
-├── db.json # JSON Server mock data
-
----
-
 Role-Based Routing
 Routes are protected based on user roles using a custom RoleProtectedRoute component:
 • Admin Dashboard: /admin
